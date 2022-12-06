@@ -1,0 +1,82 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #efefef;
+} */
+
+.slide-container {
+    margin: 0 30px;
+    overflow: hidden;
+}
+
+.card {
+    background: transparent;
+    height: 65vh;
+    width: 30px;
+    padding: 19px;
+}
+
+.card .image-box {
+    height: 200px;
+}
+
+.card .image-box img {
+    width: 100%;
+}
+
+.card .profile-details {
+    display: grid;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.profile-details .name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.profile-details .job {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #4d4d4d;
+}
+
+.swiper-navBtn {
+    color: #000;
+    height: 40px;
+    width: 40px;
+    /* background: #fff; */
+    border-radius: 50%;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 18px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-navBtn {
+        display: none;
+    }
+
+    .card .profile-details {
+        margin-top: 20px;
+    }
+}

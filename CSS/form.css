@@ -1,0 +1,200 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+
+.containers {
+    height: auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+}
+
+.testimonials {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.testimonials .image {
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonials .slides {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.slides p {
+    text-align: center;
+    padding: 0 160px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #333;
+    width: 125%;
+}
+
+.slides .quote-icon {
+    font-size: 30px;
+    color: #333;
+}
+
+.slides .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details .name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.details .job {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.nav-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: translateY(30px);
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn::after,
+.nav-btn::before {
+    font-size: 20px;
+    color: #fff;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #4070f4;
+}
+
+.review-form {
+    display: flex;
+    height: 89vh;
+    background-color: rgba(250, 235, 215, 0.064);
+    margin-top: 50px;
+}
+
+form {
+    background-color: black;
+    color: white;
+    width: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+form h2 {
+    font-size: 1.9rem;
+}
+
+.form-name input {
+    background-color: transparent;
+    width: 500px;
+    padding-left: 3PX;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.ep {
+    display: flex;
+}
+
+.ep input {
+    width: 240px;
+    margin-right: 20px;
+    padding-left: 3PX;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    background-color: transparent;
+}
+
+.textarea-border {
+    border: 1px solid white;
+    padding: 15px;
+    width: 500px;
+    height: 120px;
+}
+
+.textarea-border textarea {
+    background-color: transparent;
+    border: none;
+    height: auto;
+    color: white;
+}
+
+.textarea-border textarea:focus {
+    border: none;
+    outline: none;
+}
+
+.ep input:focus,
+.form-name input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+}
+
+form a.cnt {
+    background-color: white;
+    color: black;
+    padding: 13px;
+    text-decoration: none;
+    width: 280px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+form a.cnt:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .slide p {
+        padding: 0 20px;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+}
